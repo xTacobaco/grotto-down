@@ -49,8 +49,8 @@ function generateSection(section) {
 				"000000000",
 				"000000000",
 				"000000000",
-				"000002220",
-				"000022222",
+				"000000220",
+				"000002222",
 				"000111111",
 				"000111111",
 				"000000221",
@@ -111,4 +111,7 @@ function generateSection(section) {
 			}
 		}
 	}
+	
+	var yy = room_height + section*64;
+	instance_deactivate_region(0,yy,room_width,8*9,true,true);
 }
